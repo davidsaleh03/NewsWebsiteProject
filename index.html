@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/aee7492759.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <title>DTV MEDIA GROUP</title>
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function updateDateTime() {
+                const now = new Date();
+                
+                const date = now.toLocaleDateString(); 
+                const time = now.toLocaleTimeString([], {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    hour12: false,
+                });
+                
+                document.getElementById("dtText").innerHTML = `${date} ${time}`;
+            }
+            
+            
+            updateDateTime();
+            
+            
+            setInterval(updateDateTime, 60000);
+        });
+        </script>
+    <section class="landing" onmousemove="moveBackground(event)">
+        <img src="./assets/whatsapp.png" alt="" class="icon icon--0">
+        <img src="./assets/facebook.png" alt="" class="icon icon--1">
+        <img src="./assets/xapp.png" alt="" class="icon icon--2">
+        <img src="./assets/youtube.png" alt="" class="icon icon--3">
+        <img src="./assets/facebook.png" alt="" class="icon icon--4">
+        <img src="./assets/facebook.png" alt="" class="icon icon--5">
+        <img src="./assets/xapp.png" alt="" class="icon icon--6">
+        <img src="./assets/xapp.png" alt="" class="icon icon--7">
+        <img src="./assets/xapp.png" alt="" class="icon icon--8">
+        <img src="./assets/facebook.png" alt="" class="icon icon--9">
+        <img src="./assets/xapp.png" alt="" class="icon icon--10">
+        <img src="./assets/facebook.png" alt="" class="icon icon--11">
+        <img src="./assets/youtube.png" alt="" class="icon icon--12">
+        <img src="./assets/xapp.png" alt="" class="icon icon--13">
+        <img src="./assets/facebook.png" alt="" class="icon icon--14">
+        <img src="./assets/whatsapp.png" alt="" class="icon icon--15">
+        <nav>
+            <div class="nav__container">
+                <div class="nav__top">
+                    <img src="./assets/DTV__LOGO.png" class="nav__logo" alt="" />
+            <div class="nav__links">
+              <div class="nav__links--top">
+                <ul class="nav__link--list">
+                  <li>
+                    <button class="nav__btn--top click">
+                      <a href="#" class="nav__link">News</a>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="nav__btn--top click">
+                      <a href="#" class="nav__link">Shows</a>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="nav__btn--top click">
+                      <a href="#" class="nav__link">Schedule</a>
+                    </button>
+                  </li>
+                </ul>
+                <div class="nav__weather">
+                  <i class="fa-solid fa-sun"></i
+                  ><span class="nav__temp">71°F</span>
+                  <button class="nav__btn  click">FORECAST</button>
+                </div>
+                <div class="side__button">
+                  <i class="fa-solid fa-bell bell__top nav__icon click" onclick="toggleModal()"></i>
+                  <i class="fa-solid fa-arrow-right-to-bracket nav__icon click"></i></i>
+                </div>
+              </div>
+              <div class="nav__links--bottom">
+                <div class="nav__link--list nav__link--list--2">
+                    <button class=" nav__btn btn__margin click">
+                     LIVE
+                    </button>
+                    <div class="nav__live--program">
+                        <h3 class="on__now">on now</h3>
+                        <h3 class="on__now--description">Lorem ipsum</h3>
+                    </div>
+                    
+                </div>
+
+                <div class="nav__time">
+                  <p class="current__time"><span id="dtText"></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav__bottom">
+            <h3 class="breaking__live">
+              <span class="breaking__flicker">BREAKING</span>
+            </h3>
+            <div class="breaking__feed">
+              <div class="ticker-wrap">
+                <div class="ticker">
+                  <div class="ticker-content">
+                    <span
+                      >Breaking: Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Quo sapiente debitis vero praesentium
+                      aut nulla corporis sit odio dolores fugiat, a ullam
+                      eligendi suscipit culpa? Minima dolore sapiente rem.
+                      Veritatis quibusdam quisquam modi ipsa quod molestias
+                      quasi reprehenderit praesentium! Odit.</span
+                    >
+                    <span
+                      >Weather Alert: Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Expedita, quos. Architecto fugiat
+                      debitis, corporis cumque ipsa vitae et aut perspiciatis
+                      amet itaque ad excepturi quia earum voluptatum cupiditate
+                      nam reiciendis laborum, natus quis, incidunt
+                      exercitationem porro. Fugiat repudiandae inventore
+                      ex!</span
+                    >
+                    <span
+                      >Sports: Lorem ipsum, dolor sit amet consectetur
+                      adipisicing elit. Sit atque facilis repudiandae in
+                      perspiciatis voluptatum autem impedit corrupti id,
+                      voluptatibus, quas necessitatibus sequi assumenda numquam,
+                      animi architecto? Ullam nulla sunt, obcaecati id nobis
+                      quod natus earum, dolore a tempore eligendi.</span
+                    >
+                    <span
+                      >Tech: Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit. Iure quam totam atque voluptatem, animi error soluta
+                      porro provident doloremque perferendis maxime iusto minima
+                      culpa excepturi omnis distinctio eveniet officia voluptate
+                      ad labore quod rem. Quas adipisci distinctio cum soluta
+                      blanditiis.</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <div class="header__container">
+            <div class="carousel">
+                <div class="slides">
+                    <div class="slide">
+                        <div class="overlay"></div>
+                        <img src="./assets/show2.jpg" class="slide__img" alt="">
+                        <div class="slide__content">
+                            <h2 class="slide__title">20:00
+                                <br>
+                                daily
+                            </h2>
+                            <p class="slide__para">Lorem ipsum dolor sit amet</p>
+                            <button class="slide__btn click"><i class="fa-regular fa-circle-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="overlay"></div>
+                        <img src="./assets/show2.jpg" class="slide__img" alt="">
+                        <div class="slide__content">
+                            <h2 class="slide__title">14:00
+                                <br>
+                                Daily
+                            </h2>
+                            <p class="slide__para">Lorem ipsum dolor sit amet</p>
+                            <button class="slide__btn click">Watch Now</button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="overlay"></div>
+                        <img src="./assets/show2.jpg" class="slide__img" alt="">
+                        <div class="slide__content">
+                            <h2 class="slide__title">14:00
+                                <br>
+                                Daily
+                            </h2>
+                            <p class="slide__para">Lorem ipsum dolor sit amet</p>
+                            <button class="slide__btn click">Watch Now</button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="overlay"></div>
+                        <img src="./assets/show2.jpg" class="slide__img" alt="">
+                        <div class="slide__content">
+                            <h2 class="slide__title">14:00
+                                <br>
+                                Daily
+                            </h2>
+                            <p class="slide__para">Lorem ipsum dolor sit amet</p>
+                            <button class="slide__btn click">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="prev"><i class="fa-solid fa-caret-left click"></i></button>
+                <button class="next"><i class="fa-solid fa-caret-right click"></i></button>
+            </div>
+        </div>
+      </header>
+      <button class="bell__btn click" onclick="toggleModal()">
+        <i class="fa-solid fa-bell"></i>
+      </button>
+      <a href="#news" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__one">
+            <h1 class="modal__title">STAY CONNECTED!</h1>
+            <figure class="modal__figure">
+                <img src="./assets/DTVNOTIFY2.png" alt="" class="modal__img">
+            </figure>
+            <div class="modal__app-play--main">
+                <div class="modal__app-play click">
+                    <i class="fa-brands fa-app-store"></i>
+                    <h3 class="modal__app--title">App Store</h3>
+                </div>
+                <div class="modal__app-play click">
+                    <i class="fa-brands fa-google-play"></i>
+                    <h3 class="modal__app--title">Play Store</h3>
+                </div>
+            </div>
+        </div>
+        <div class="modal__half modal__two">
+            <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+            <div class="modal__notifications">
+                <h3 class="modal__notif--title">Sign up for notifications:</h3>
+                <div class="notify__forms">
+                    <form action="" class="contact__form">
+                        <div class="icon__wrapper icon__sms">
+                            <i class="fa-solid fa-message form__icon"></i>
+                        </div>
+                       <input type="tel" class="input__notify" id="phone" name="phone">
+                       <button class="input__btn"><i class="fa-solid fa-paper-plane"></i></button>
+                   </form>
+                    <form action="" class="contact__form">
+                        <div class="icon__wrapper icon__whats">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                       <input type="tel" class="input__notify" id="phone" name="phone">
+                       <button class="input__btn"><i class="fa-solid fa-paper-plane"></i></button>
+                   </form>
+                    <form action="" class="contact__form">
+                        <div class="icon__wrapper icon__email">
+                            <i class="fa-solid fa-envelope form__icon"></i>
+                        </div>
+                       <input type="tel" class="input__notify" id="phone" name="phone">
+                       <button class="input__btn"><i class="fa-solid fa-paper-plane"></i></button>
+                   </form>
+                </div>
+            </div>
+            <div class="modal__socials">
+                <h3 class="modal__socials--title">Follow us!</h3>
+                <ul class="modal__social--list">
+                    <li class="modal__social--link"><i class="fa-brands fa-instagram social__icon click"></i></li>
+                    <li class="modal__social--link"><i class="fa-brands fa-square-facebook social__icon click"></i></li>
+                    <li class="modal__social--link"><i class="fa-brands fa-square-x-twitter social__icon click"></i></li>
+                    <li class="modal__social--link"><i class="fa-brands fa-youtube social__icon click"></i></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    </section>
+   
+  </body>
+</html>
