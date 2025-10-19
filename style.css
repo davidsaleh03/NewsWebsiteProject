@@ -62,7 +62,7 @@ a {
   right: 40px;
 }
 
-.nav__small {
+.nav__small--icons {
     position: absolute;
     display: none;
 }
@@ -105,6 +105,10 @@ margin-left: 12px;
   width: 100%;
   display: block;
   padding: 12px;
+}
+
+.nav__small--live {
+    display: none;
 }
 
 .nav__links--top {
@@ -467,9 +471,9 @@ header {
 
 .slide__content {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 30%;
-  transform: translate(-50%, -30%);
+  transform: translate(-30%, -60%);
   color: #ffffff;
   font-weight: lighter;
   text-align: left;
@@ -943,10 +947,103 @@ top: 675px;
 left: 85%;
 }
 
+
 /* PHONES AND TABLETS */
 
 @media (max-width: 760px) {
+ .nav__top {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav__links {
+        display: none;
+    }
 
+    .nav__small--icons {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-bell-2,
+.fa-bars {
+    font-size: 30px;
+    text-align: center;
+    margin-right: 24px;
+}
+.header {
+    height: calc(100vh);
+}
+
+.nav__logo {
+    width: 115px;
+    height: 90px;
+}
+
+.nav__small--live {
+       position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    top: 2.5%;
+    left: 30%; 
+    transform: translateX(-30%);
+    }
+
+.carousel {
+    height: calc(100vh - 132px)
+}
+
+.slide__content {
+    top: 55%;
+    left: 40%;
+    transform: translate(-40%, -55%);
+}
+
+.icon {
+    display: none;
+}
+
+.modal {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal__figure {
+    /* display: none; */
+    width: 150px;
+    height: 150px;
+    margin: 0;
+
+}
+
+.modal__one {
+    margin-bottom: 18px;
+}
+.modal__half {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+}
+
+.modal__notifications {
+    margin: 0;
+}
+
+.slide__content {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+.carousel {
+    height: calc(100vh - 132px)
+}
 }
 
 /* SMALL PHONES */
@@ -967,11 +1064,15 @@ left: 85%;
     height: 90px;
 }
 
-.nav__small {
+.nav__small--icons {
     position: static;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+..nav__small--live {
+    display: none;
 }
 
 .fa-bars {
@@ -1018,7 +1119,7 @@ left: 85%;
 .slide__content {
     top: 60%;
     left: 50%;
-    transform: translate(-60%, -50%);
+    transform: translate(-50%, -60%);
 }
 
 .carousel {
